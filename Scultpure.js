@@ -64,11 +64,7 @@ function say(msg) {
     message = "";
     if (str[0].toLowerCase() === "//say" && msg.author.id != "776293568763002891") {
         for (let i = 1; i < str.length; i++) {
-            if (str[i] == "stupid") {
-                message = "Yeah we know that.";
-            } else {
-                message += str[i] + " ";
-            }
+            message += str[i] + " ";
         }
         msg.channel.send(message);
     }
